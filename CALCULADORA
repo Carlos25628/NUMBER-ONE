@@ -1,0 +1,27 @@
+using System;
+
+namespace ACTIVIDAD_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int, double, string
+
+            double A,B,RES;
+            string AB;
+            do
+            {
+                Console.WriteLine("INGRESA UN NUMERO: ");
+                A = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("INGRESA EL SEGUNDO NUMERO: ");
+                B = Convert.ToDouble(Console.ReadLine());
+                RES = A * B;
+                Console.WriteLine("Resultado: " + RES);
+                Console.WriteLine("¿Quieres continuar multiplicando?(y/n)");
+                AB = Console.ReadLine();
+                Console.Clear();
+            } while (AB == "y");
+        }
+    }
+}
